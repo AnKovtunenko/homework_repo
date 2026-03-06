@@ -20,16 +20,19 @@
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
         <input type='password' name='confirm_password' placeholder='Confirm password'>
         <br>
-        <span fakelabel>Sex</span>
-        <input type="radio" name="sex" value="female" checked>Female
-        <input type="radio" name="sex" value="male"> Male
+        <div>Sex</div>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="sex" value="female" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="sex" value="male">
+
         <br>
         <label for="age">Age</label>
         <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age" required>
         <br>
         <label for="courses">Courses</label>
-        <select name="courses" id="courses" multiple required>
-            <option value="null">Select option</option>
+        <select name="courses[]" id="courses" multiple required>
+            <option value="null" disabled>Select option</option>
             <optgroup label="Programming">
                 <option value="front-end">Front-End</option>
                 <option value="back-end">Back-End</option>
