@@ -1,0 +1,79 @@
+<select name=""></select> name='skill[]' multiple
+<optgroup>
+    <option value="laka"></option>
+</optgroup>
+
+<input type="checkbox" name="skill[]" value="html"> html 5
+<br>
+<input type="checkbox" name="skill[]" value="html"> css
+<br>
+<input type="checkbox" name="skill[]" value="html"> js
+
+
+[] - коли треба масив даних списку передати
+
+label
+input type = 'email' name = 'email' placeholder = 'Enter your email' required
+
+floating label
+
+minlength = '2' maxlength = '20' - обмеження на кількість символів
+
+input type = 'email' name = 'email' id = 'email'placeholder = 'Enter your email' required
+label for = 'email' > Enter your email </label>
+
+
+<label>
+    <input type="text" name="name" required disabled placeholder="Enter your name">
+</label>
+disabled не буде відправляти дані
+readonly - не буде відправляти дані, але можна скопіювати
+novalidate - не буде перевіряти дані на валідність атрибут форми
+autocomplete = 'on' - не буде пропонувати варіанти при введенні даних
+
+<input type="text" name="name" required placeholder="Enter your name" id="css_skill">
+<label for="css_skill">CSS 3</label>
+
+<span class=fake_label>Advanced skills</span>
+fieldset - групування елементів форми, номер карти, дата закінчення, код безпеки
+<fieldset>
+    <legend>Payment details</legend>
+    <input type="text" name="card_number" placeholder="Card number">
+    <input type="text" name="expiry_date" placeholder="Expiry date">
+    <input type="text" name="cvv" placeholder="CVV">
+
+    <span>
+
+        <label><input type="radio" name="gender" value="male" checked></label>
+        <label for="female"><input type="radio" name="gender" value="female"></label>
+    </span>
+
+    <input type='number' name='age' min='18' max='100' placeholder='Enter your age'>
+    <input type='range' name='age' min='18' max='100' value='18' step='5'>
+
+    button , dont use input type button
+
+    button type = 'reset' - очистить форму
+
+    input type file name = 'file' - для загрузки файлов
+    enctype = 'multipart/form-data' - для загрузки файлов
+
+    post перепише дані з гета
+    <label>
+        <input type password name="password" placeholder="Enter your password">
+    </label>
+
+    textarea name = 'message' placeholder = 'Enter your message' maxlength = '500' required></textarea>
+    doesnt have value, only content
+    <textarea name="" id="">rows columns </textarea>
+
+    Повне ім’я
+    Email
+    Пароль
+    Підтвердження пароля
+    Стать (можна обрати один варіант)
+    Вік
+    Курс (спадний список із варіантами: Front-End, Back-End, Project Management, QA Manual)
+    Повна адреса проживання
+    Опція про погодження з умовами конфіденційності
+    Кнопка «Зареєструватись»

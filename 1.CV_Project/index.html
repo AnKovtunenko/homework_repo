@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <title>My CVV</title>
 </head>
+<link rel="stylesheet" href="./assets/styles/styles.css">
+<link rel="stylesheet" href="./assets/styles/normalize.css">
 
-<body style="background-color: rgb(98, 140, 109);">
+<body>
     <h1>Резюме</h1>
     <h2>Харсун Анастасія Олександрівна</h2>
     <br>
     <img width="100" src='assets/Images/my_photo.jpeg' alt="Photo of Anastasiia Kharsun" />
     <h3>Future JS Developer</h3>
-    <p>QA Engineer | 5+ років досвіду</p>
-    <p>Manual / Functional testing | Bug reporting |</p>
-    <p>Київ.</p>
+    <div class='about'>
+        <p>QA Engineer | 5+ років досвіду</p>
+        <p>Manual / Functional testing | Bug reporting |</p>
+        <p>Київ.</p>
+    </div>
     <h3>Досвід роботи:</h3>
     <ul>
-        <li>2021 - до сьогодні, QA Software Engineer, Dataart</li>
+        <li id="current_job">2021 - до сьогодні, QA Software Engineer, Dataart</li>
         <li>2019 - 2021, Support Manager, Dataart</li>
     </ul>
     <h3>Освіта:</h3>
@@ -26,7 +30,7 @@
         <li>2013-2017, Бакалавр, Перекладач англійської та іспанської мов</li>
     </ul>
     <h3>Навички</h3>
-    <ul>
+    <ul class="skills">
         <li>Manual testing (web & moblie)</li>
         <li>Functional, Regression, Smoke, Sanity testing</li>
         <li>Test case design & test documentation</li>
@@ -37,7 +41,7 @@
         <li>Cross-browser & cross-platform testing</li>
     </ul>
     <h3>Інструменти</h3>
-    <ul>
+    <ul class="skills tools">
         <li>Jira / Confluence, Azure DevOps</li>
         <li>TestRail</li>
         <li>Postman (API testing)</li>
@@ -45,13 +49,15 @@
         <li>Swagger</li>
     </ul>
     <hr>
-    <a href="https://www.linkedin.com/" rel="noreferrer,nofollow" target="_blank">Linkedin link </a>
-    <br>
-    <a href="malito:whatalaugh11@gmali.com?">whatalaugh11@gmail.com </a>
-    <br>
-    <a href="tel:+380930358718">+38 (093) 035 8718</a>
-    <br>
-    <a href="/../1.CV_Project/index_en.html"> EN Version</a>
+    <nav class="nav_bottom">
+        <a href="https://www.linkedin.com/" rel="noreferrer,nofollow" target="_blank">Linkedin link </a>
+
+        <a href="malito:whatalaugh11@gmali.com?">whatalaugh11@gmail.com </a>
+
+        <a href="tel:+380930358718">+38 (093) 035 8718</a>
+
+        <a href="/1.CV_Project/index_en.html"> EN Version</a>
+    </nav>
 </body>
 
 </html>

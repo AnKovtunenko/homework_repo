@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    padding: 10px;
+    background-color: beige;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: inherit;
+    color: #943030;
+    text-decoration: underline;
+    outline: 1px solid #5293ed;
+
+    &:hover {
+        color: #29338a;
+        text-decoration: none;
+    }
+}
+
+h2 {
+    text-align: left;
+    background-color: #5293ed;
+
+}
+
+img {
+    border-radius: 10px;
+    border: 2px solid #5293ed;
+    box-shadow: 13px -16px 36px #5293ed;
+}
+
+ul {
+    padding: 15px;
+    margin: 15px;
+    list-style-type: none;
+    text-align: left;
+
+    &:hover {
+        font-size: 1.2rem;
+        box-shadow: #5293ed 0px 0px 10px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+
+
+#current_job {
+    color: #943030;
+    font-weight: bold;
+}
+
+ul.skills {
+    background-color: rgba(155, 187, 159, 0.827);
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.about {
+    background-color: rgba(155, 187, 159, 0.827);
+    text-align: left;
+    font-weight: bold;
+    width: 60%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.nav_bottom {
+    background-color: rgba(155, 187, 159, 0.827);
+    justify-content: space-around;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 70px;
+    align-items: center;
+}
