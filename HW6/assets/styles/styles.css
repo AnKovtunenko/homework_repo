@@ -9,18 +9,16 @@ hgroup {
     width: 100%;
     color: #FF8984;
     text-align: center;
-    font-weight: 700;
 }
 
 hgroup h1 {
     font-size: 36px;
-    text-align: center;
+    line-height: 2.625rem;
+    font-weight: 700;
 }
 
 hgroup p {
-    color: #FF8984;
     font-size: 24px;
-
 }
 
 ul {
@@ -30,14 +28,12 @@ ul {
     padding: 0;
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
 
 ul li {
     padding: 10px;
     background-color: #88839E;
     color: #FFF;
-    font-size: 27px;
 
     &:hover {
         outline: #FFF solid 3px;
