@@ -37,7 +37,7 @@ ul li {
     font-size: 27px;
 
     &:hover {
-        outline: #FFF solid 1px;
+        outline: #FFF solid 3px;
     }
 
     &:nth-child(even) {
@@ -50,6 +50,8 @@ ul li label {
 }
 
 .item {
+    margin-right: 10px;
+    margin-left: 5px;
     font-size: 27px;
 }
 
