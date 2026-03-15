@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B81AC;
+}
+
+main {
+    margin: 20px;
+    background-color: #3399CC;
+    font-family: Lucida Sans Unicode;
+    color: #FFFFFF;
+}
+
+.weather_grid {
+    width: 1440px;
+    margin: 0 auto;
+    border: 25px;
+}
+
+h1 {
+    padding-top: 60px;
+    font-size: 21px;
+    margin-bottom: 35px;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    background-color: #FFFFFF;
+    font-size: 0px;
+}
+
+ul:hover li {
+    opacity: 70%;
+    transition: all .1s ease-in;
+}
+
+ul li:hover {
+    opacity: 100%;
+    transition: all .1s ease-in;
+    outline: 2px solid white;
+
+}
+
+li {
+    display: inline-block;
+    font-size: 22px;
+    height: 147px;
+    top: 131px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+footer {
+    padding-bottom: 50px;
+}
+
+.weather-icon {
+    width: 35px;
+    height: 34px;
+    top: 60px;
+    left: 363px;
+}
+
+.light_blue {
+    background-color: #3399CC;
+    width: 50%;
+}
+
+.turquoise {
+    background-color: #33CCCC;
+    width: 25%;
+}
+
+.purple {
+    background-color: #996699;
+    width: 25%;
+}
+
+.red {
+    background-color: #C24747;
+    width: 25%;
+}
+
+.orange {
+    background-color: #E2674A;
+    width: 25%;
+}
+
+.yellow {
+    background-color: #FFCC66;
+    width: 25%;
+}
+
+.light_green {
+    background-color: #99CC99;
+    width: 25%;
+}
+
+.khaki {
+    background-color: #669999;
+    width: 25%;
+}
+
+.pink {
+    background-color: #CC6699;
+    width: 50%;
+}
+
+.green {
+    background-color: #339966;
+    width: 25%;
+}
+
+.dark_purple {
+    background-color: #666699;
+    width: 100%;
+}
+
+.bottom_text {
+    margin-top: 35px;
+}
+
+.city {
+    margin-top: 26px;
+    margin-bottom: 27px;
+}
