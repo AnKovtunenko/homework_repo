@@ -1,0 +1,98 @@
+@font-face {
+    font-family: FrancoisOnereg;
+    src: url(./fonts/FrancoisOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: PTregular;
+    src: url(./fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: PTbold;
+    src: url(./fonts/PTSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: PTitalic;
+    src: url(./fonts/PTSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: FarroLight;
+    src: url(./fonts/Farro-Light.ttf);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+}
+
+.logo {
+    width: 100%;
+}
+
+.page-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+h1 {
+
+    font-family: FrancoisOnereg;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4%;
+    padding-bottom: 40px;
+
+}
+
+hgroup {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+sup {
+    font-family: FarroLight;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+p {
+    font-family: PTregular;
+    font-size: 28px;
+    line-height: 48px;
+    padding-bottom: 40px;
+}
+
+p .underline {
+    text-decoration: underline;
+}
+
+p .bold {
+    font-family: PTbold;
+}
+
+.italic {
+    font-family: PTitalic;
+}
+
+.extrapadding p {
+    padding-top: 40px;
+}
+
+.cover {
+    background-color: gray;
+}
