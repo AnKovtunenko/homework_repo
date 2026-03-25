@@ -124,6 +124,16 @@ header {
     align-items: center;
     background-color: #fff;
     gap: 30px;
+    border: 1px solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-width: 1px 0px 1px 0px;
+
+    border-style: solid;
+
+    border-color: #BFBFBF;
+
+    ;
 
     .logos {
         display: flex;
