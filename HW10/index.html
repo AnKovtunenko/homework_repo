@@ -9,24 +9,36 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo"> <img src="./img/header.png" alt=""></div>
-    </header>
+
+
     <div class="page-wrapper">
+        <div class="top">
+            <header>
+                <div class="left-side">
+                    <div class="lang">ENG</div>
+                    <ul>
+                        <li>Documentation <a href="#"></a></li>
+                        <li>/</li>
+                        <li>Who's using <a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="logo"> <img src="./img/company-logo-black.png" alt=""></div>
+            </header>
+        </div>
         <div class="container">
             <main>
-                <div>
+                <div class="section">
                     <hgroup>
-                        <h1>Introduction </h1><sup>Chapter 1</sup>
+                        <h2>Introduction </h2><sup>Chapter 1</sup>
                     </hgroup>
                     <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
                         instructions, they've moved to <span class="underline">their own section</span>. Continue
                         reading for an introduction to the
                         documentation, Native Components, React, and more!</p>
                 </div>
-                <div>
+                <div class="section">
                     <hgroup>
-                        <h1>Core Components </h1><sup>Chapter 2</sup>
+                        <h2>Core Components </h2><sup>Chapter 2</sup>
                     </hgroup>
                     <p>React Native is an open source framework for building Android and iOS applications using React
                         and
@@ -39,9 +51,9 @@
                         cover how components work in React Native.
                     </p>
                 </div>
-                <div>
+                <div class="section">
                     <hgroup>
-                        <h1>react fundamentals </h1><sup>Chapter 3</sup>
+                        <h2>react fundamentals </h2><sup>Chapter 3</sup>
                     </hgroup>
 
                     <p>React Native runs on <span class="underline">React</span>, a popular open source library for
@@ -50,31 +62,41 @@
                         can
                         get you started or can serve as a refresher course.</p>
                     <p>We’re going to cover the core concepts behind React:</p>
-                    <p><span class="bold">+ components</span>. The rest of this introduction to React uses cats in its
-                        examples: friendly,
-                        approachable creatures that need names and a cafe to work in.</p>
-                    <p><span class="bold">+ JSX</span>. React and React Native use JSX, a syntax that lets you write
-                        elements inside JavaScript
-                        like
-                        so: <span class="cover"> &lt Text &gt Hello, I am your cat!&lt/Text&gt.</span></p>
-                    <p>The React docs have <span class="underline">a comprehensive guide to JSX</span> you can refer to
+                    <ul class="list-1">
+                        <li><span class="bold">+ components</span>. The rest of this introduction to React uses cats in
+                            its
+                            examples: friendly, approachable creatures that need names and a cafe to work in.</li>
+                        <li><span class="bold">+ JSX</span>. React and React Native use JSX, a syntax that lets you
+                            write
+                            elements inside JavaScript
+                            like
+                            so: <span class="cover"> &lt Text &gt Hello, I am your cat!&lt/Text&gt.</span></li>
+                    </ul>
+
+                    <p class="react-docs">The React docs have <span class="underline">a comprehensive guide to
+                            JSX</span> you can refer to
                         learn even more. Because JSX is
                         JavaScript, you can use variables inside it. Here you are declaring a <span class="cover"> name
                         </span> for the cat, name,
                         and
                         embedding it with curly braces inside <span class="cover"> &lt Text &gt</p>
-                    <p><span class="bold">+ props</span>. Props is short for “properties”. </p>
-                    <p><span class="bold">+ state</span>. While you can think of props as arguments you use to configure
-                        how components render,
-                        state
-                        is like a component’s personal data storage. State is useful for handling data that changes over
-                        time or that comes from user interaction. State gives your components memory!</p>
+                    <ul>
+                        <li><span class="bold">+ props</span>. Props is short for “properties”.</li>
+                        <li><span class="bold">+ state</span>. While you can think of props as arguments you use to
+                            configure
+                            how components render,
+                            state
+                            is like a component’s personal data storage. State is useful for handling data that changes
+                            over
+                            time or that comes from user interaction. State gives your components memory!</li>
+                    </ul>
                 </div>
-                <div class="">
+                <div class="section4">
                     <hgroup>
-                        <h1>handling text input </h1><sup>Chapter 4</sup>
+                        <h2>handling text input </h2><sup>Chapter 4</sup>
                     </hgroup>
-                    <p>TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop
+                    <p>TextInput is a Core Component that allows the user to enter text. It has an <span class="italic">
+                            onChangeText</span> prop
                         that
                         takes a function to be called every time the text changed, and an onSubmitEditing prop that
                         takes a
