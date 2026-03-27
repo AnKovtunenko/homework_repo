@@ -23,6 +23,11 @@
     src: url(./fonts/Farro-Light.ttf);
 }
 
+@font-face {
+    font-family: Tourney;
+    src: url(./fonts/Tourney-VariableFont_wdth\,wght.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -48,15 +53,20 @@ h2 {
 
 }
 
+.top {
+    position: fixed;
+    width: inherit;
+
+}
+
 header {
     background-color: #FFF;
     font-family: FrancoisOnereg;
-    font-size: 36px;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    margin-bottom: -32px;
-    margin-top: 10px;
+    padding-top: 10px;
+
 
     li {
         font-family: FrancoisOnereg;
@@ -64,6 +74,11 @@ header {
         align-items: start;
         display: inline-block;
         letter-spacing: -3.3%;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
     }
 }
 
@@ -74,7 +89,7 @@ header {
     align-items: center;
 
     .lang {
-        font-family: PTregular;
+        font-family: Tourney;
         font-size: 28px;
         line-height: 48px;
         margin-bottom: 28px;
@@ -86,19 +101,55 @@ header {
 .page-wrapper {
     width: 1200px;
     margin: 0 auto;
+
 }
 
-.container {
-    margin-top: 85px;
+.content {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: start;
+    gap: 30px;
+    padding-block: 2rem;
+    padding-top: 140px;
 }
 
+.aside-wrap {
+    position: sticky;
+    top: 4rem;
+}
+
+.aside {
+    font-size: 20px;
+
+    padding-top: 10px;
+
+
+    .sideitem {
+        font-family: FrancoisOnereg;
+        border-bottom: 1px solid gray;
+        padding-bottom: 10px;
+        font-size: 36px;
+        text-transform: uppercase;
+
+        &:not(:first-child) {
+            padding-top: 70px;
+        }
+    }
+}
 
 .section {
     margin-bottom: 55px;
 }
 
+.black-line {
+    display: block;
+    height: 8px;
+    width: 100px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
 hgroup {
-    margin-top: 20px;
     display: flex;
     gap: 10px;
 
@@ -115,6 +166,8 @@ p {
     line-height: 48px;
     margin-bottom: 28px;
 }
+
+
 
 
 li {
@@ -141,8 +194,6 @@ li {
     li {
         padding-bottom: 35px;
     }
-
-
 }
 
 .react-docs {
@@ -162,4 +213,10 @@ li {
 .italic {
     font-family: PTitalic;
     font-size: 28px;
+}
+
+body {
+    background: #FFF url(./img/Vector.svg) right -50px top 150px/760px auto no-repeat;
+    background-attachment: fixed;
+
 }
