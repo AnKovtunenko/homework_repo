@@ -1,0 +1,193 @@
+@font-face {
+    font-display: swap;
+    font-family: 'FrancoisOnereg';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/FrancoisOne-Regular.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PTSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-family: PTregular;
+    src: url(./fonts/PTSans-Regular.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PTSans-Bold';
+    font-style: bold;
+    font-weight: 700;
+    font-family: PTbold;
+    src: url(./fonts/PTSans-Bold.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PTSans-Italic';
+    font-style: italic;
+    font-weight: 400;
+    font-family: PTitalic;
+    src: url(./fonts/PTSans-Italic.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Farro-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-family: FarroLight;
+    src: url(./fonts/Farro-Light.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 400;
+    font-family: Tourney;
+    src: url(./fonts/Tourney-VariableFont_wdth\,wght.woff2);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-family: FrancoisOnereg;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4%;
+    padding-bottom: 40px;
+
+}
+
+header {
+    background-color: #FFF;
+    font-family: FrancoisOnereg;
+    font-size: 36px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -32px;
+    margin-top: 10px;
+
+    li {
+        font-family: FrancoisOnereg;
+        font-size: 20px;
+        align-items: start;
+        display: inline-block;
+        letter-spacing: -3.3%;
+    }
+}
+
+.left-side {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    align-items: center;
+
+    .lang {
+        font-family: Tourney;
+        font-size: 28px;
+        line-height: 48px;
+        margin-bottom: 28px;
+    }
+}
+
+
+
+.page-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 85px;
+}
+
+
+.section {
+    margin-bottom: 55px;
+}
+
+hgroup {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+
+    sup {
+        font-family: FarroLight;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+}
+
+p {
+    font-family: PTregular;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 28px;
+}
+
+
+li {
+    font-family: PTregular;
+    font-size: 28px;
+    line-height: 48px;
+
+    &:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+
+}
+
+.extrapadding p {
+    padding-top: 40px;
+}
+
+.cover {
+    background-color: gray;
+}
+
+.list-1 {
+    li {
+        padding-bottom: 35px;
+    }
+
+
+}
+
+.react-docs {
+    margin-bottom: 40px;
+}
+
+.bold {
+    font-family: PTbold;
+    font-size: 28px;
+}
+
+.underline {
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+.italic {
+    font-family: PTitalic;
+    font-size: 28px;
+}
