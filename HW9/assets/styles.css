@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-li {
-    list-style: none;
-}
+
 
 body {
     background-color: #FFF;
@@ -55,6 +53,10 @@ h2 {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    li {
+        list-style: none;
     }
 }
 
