@@ -5,72 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 
 <body>
-
     <main>
         <div class="page-wrapper">
-            <div class="container">
-                <div class="section1">
-                    <h2>
-                        Create an Account
-                    </h2>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <br>
-                    <label for="male">Male</label>
-                    <input type="radio" id="male" name="gender" value="male" checked>
-                    <label for="female">Female</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <br>
-                    <label for="country">Country</label>
-                    <input type="text" id="country" name="country">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city">
+            <div class="form-wrapper">
+                <h1>
+                    Create an Account
+                </h1>
+                <div class="form-cols">
+                    <div class="form-row">
+                        <label for="fname">First Name
+                            <input type="text" id="fname" name="fname"></label>
+                    </div>
+                    <div class="form-row">
+                        <label for="lname">Last Name
+                            <input type="text" id="lname" name="lname"></label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email
+                        <input type="email" id="email" name="email"></label>
+                    <p>We'll never share your email with anyone else.</p>
+                </div>
+
+                <div class="form-row">
+                    <ul class="radio-list">
+                        <li>
+                            <label for="male">Male
+                                <input type="radio" id="male" name="gender" value="male" checked></label>
+                        </li>
+                        <li>
+                            <label for="female">Female
+                                <input type="radio" id="female" name="gender" value="female"></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-cols">
+                    <div class="form-row">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="ukraine">Ukraine</option>
+                            <option value="australia">Australia</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                </div>
+                <div class="form-btn">
                     <button type="button" name="Sign Up"> Sign Up</button>
-                    <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms and
+                </div>
+                <div class="terms">
+                    <p>By clicking the 'Sign Up' button, you confirm that you accept our <br> <a href="#">Terms and
                             Conditions</a> and
                         <a href="#">Privacy
-                            Policy</a> .
+                            Policy</a>
                     </p>
                 </div>
+                <div class="line">
+                </div>
             </div>
-            <div class="section2">
-                <h2>
-                    Profile
-                </h2>
+            <div class="footer">
+                <p>Have an account?</p>
+                <button type="button">Log In</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="form-wrapper">
+            <h1>
+                Profile
+            </h1>
+            <div class="img-section">
                 <img src="" alt="Profile-photo">
-                <label for="img">img</label>
-                <input type="file" id="img">
+                <label for="img">
+
+
+                    <input type="file" id="img">
+                    <div class="img-icon"><img src="./assets/images/Photo Camera.svg" alt=""></div>
+                </label>
                 <img src="" alt="Trash-bin">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <br>
-                <label for="country">Country</label>
-                <input type="text" id="country" name="country">
-                <br>
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
-                <br>
-                <label for="zip">Zip Code</label>
-                <input type="text" name="zip" id="zip">
-                <label for="phone">Phone Number</label>
-                <input type="text" name="pnumber" id="pnumber">
             </div>
+            <div class="form-cols">
+
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"><br>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="form-row">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" name="zip" id="zip">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="pnumber" id="pnumber">
+                </div>
+            </div>
+        </div>
         </div>
 
     </main>
-    <footer>
-        <p>Have an account?</p>
-        <button type="button">Log In</button>
-    </footer>
 </body>
 
 </html>
