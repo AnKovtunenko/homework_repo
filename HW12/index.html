@@ -46,11 +46,14 @@
                 <div class="form-cols">
                     <div class="form-row">
                         <label for="country">Country</label>
-                        <select name="country" id="country">
-                            <option value="ukraine">Ukraine</option>
-                            <option value="australia">Australia</option>
-                            <option value="uk">United Kingdom</option>
-                        </select>
+                        <div class="select-wrapper">
+                            <select name="country" id="country">
+                                <option value="select">Select</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="australia">Australia</option>
+                                <option value="uk">United Kingdom</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-row">
                         <label for="city">City</label>
@@ -78,24 +81,25 @@
         </div>
         </div>
         </div>
-
-
         <div class="form-wrapper">
             <h1>
                 Profile
             </h1>
-            <div class="img-section">
-                <img src="" alt="Profile-photo">
-                <label for="img">
+            <div class="img-wrapper">
+                <div class="avatar-placeholder"></div>
+                <div class="img-section"> <label for="avatar"></label>
+                    <input type="file" id="avatar">
+                    <p class="file-limit"> Up to 1 MB (300x300 px)</p>
+                    <div class="fake-file"></div>
+                </div>
+                <div class="trash-bin">
+                    <button type="reset">
+                        <img src="./assets/images/trash.svg" alt="bin">
+                    </button>
+                </div>
 
-
-                    <input type="file" id="img">
-                    <div class="img-icon"><img src="./assets/images/Photo Camera.svg" alt=""></div>
-                </label>
-                <img src="" alt="Trash-bin">
             </div>
             <div class="form-cols">
-
                 <div class="form-row">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name"><br>
@@ -107,8 +111,14 @@
 
                 <div class="form-row">
                     <label for="country">Country</label>
-                    <select name="country" id="country">
-                    </select>
+                    <div class="select-wrapper">
+                        <select name="country" id="country">
+                            <option value="select">Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="australia">Australia</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="city">City</label>
@@ -123,6 +133,10 @@
                     <input type="text" name="pnumber" id="pnumber">
                 </div>
             </div>
+            <div class="form-btn small">
+                <button type="button" name="Update">Update</button>
+            </div>
+
         </div>
         </div>
 
