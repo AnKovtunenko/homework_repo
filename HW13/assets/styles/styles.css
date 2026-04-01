@@ -101,14 +101,14 @@ header {
 
     .icon-2 {
         background: url(./../images/2.svg) no-repeat;
-        background-position: 14px -42px;
+        background-position: 12px -42px;
         border: #3DB3701A solid 1px;
         ;
     }
 
     .icon-3 {
         background: url(./../images/3.svg) no-repeat;
-        background-position: 14px -42px;
+        background-position: 19px -42px;
         border: #3DB3701A solid 1px;
         ;
     }
@@ -130,7 +130,7 @@ header {
     border-radius: 8px;
     width: 64px;
     height: 64px;
-    background-position: 14px 14px;
+    background-position: 12px 14px;
     margin-bottom: 30px;
 }
 
@@ -140,7 +140,7 @@ header {
     border-radius: 8px;
     width: 64px;
     height: 64px;
-    background-position: 14px 14px;
+    background-position: 19px 14px;
     margin-bottom: 30px;
 }
 
