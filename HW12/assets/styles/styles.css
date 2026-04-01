@@ -208,6 +208,26 @@ label:has(input[type="file"]) {
     }
 }
 
+.fake-file {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent url('../images/Photo-camera.svg') right 6px top 45% no-repeat;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 26px;
+    font-size: 0.8rem;
+    color: #b2b2b2;
+    line-height: 33px;
+    z-index: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .file-limit {
     position: relative;
     top: 30px;
@@ -296,25 +316,4 @@ label:has(input[type="file"]) {
         z-index: 2;
         opacity: 0;
     }
-}
-
-
-.fake-file {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent url('../images/Photo-camera.svg') right 6px top 45% no-repeat;
-    border: 1px solid #E4E4E4;
-    border-radius: 6px;
-    left: 0;
-    top: 0;
-    padding-left: 10px;
-    padding-right: 26px;
-    font-size: 0.8rem;
-    color: #b2b2b2;
-    line-height: 33px;
-    z-index: 1;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
