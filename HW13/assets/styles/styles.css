@@ -201,7 +201,7 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
 
     .logo-bottom {
         display: flex;
@@ -211,7 +211,44 @@ footer {
         height: 35px;
         width: 200px;
         color: #FFF;
-        height: 100%;
         margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .socials {
+        .social_icon {
+            background: url(./../images/socials.svg) no-repeat;
+            height: 38px;
+            width: 38px;
+            display: block;
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+            gap: 10px;
+        }
+
+
+        .ig {
+            background-position: 0 0;
+        }
+
+        .fb {
+            background-position: -48px 0;
+        }
+
+        .git {
+            background-position: -96px 0;
+        }
+
+        .ie {
+            background-position: -144px 0;
+        }
+
+        .tw {
+            background-position: -192px 0;
+        }
     }
 }

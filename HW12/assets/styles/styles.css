@@ -281,7 +281,7 @@ label:has(input[type="file"]) {
     border: 1px solid #E4E4E4;
     border-radius: 6px;
 
-    button[type="reset"] {
+    button[type="button"] {
         all: unset;
         width: 100%;
         height: 100%;
