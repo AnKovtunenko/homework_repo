@@ -15,35 +15,103 @@
                 <h1>
                     Create an Account
                 </h1>
-                <div class="form-cols">
-                    <div class="form-row">
-                        <label for="fname">First Name
-                            <input type="text" id="fname" name="fname"></label>
+                <form action="">
+                    <div class="form-cols">
+                        <div class="form-row">
+                            <label for="fname">First Name
+                                <input type="text" id="fname" name="fname" required></label>
+                        </div>
+                        <div class="form-row">
+                            <label for="lname">Last Name
+                                <input type="text" id="lname" name="lname" required></label>
+                        </div>
                     </div>
                     <div class="form-row">
-                        <label for="lname">Last Name
-                            <input type="text" id="lname" name="lname"></label>
+                        <label for="email">Email
+                            <input type="email" id="email" name="email" required></label>
+                        <p>We'll never share your email with anyone else.</p>
                     </div>
-                </div>
-                <div class="form-row">
-                    <label for="email">Email
-                        <input type="email" id="email" name="email"></label>
-                    <p>We'll never share your email with anyone else.</p>
-                </div>
 
-                <div class="form-row">
-                    <ul class="radio-list">
-                        <li>
-                            <label for="male">Male
-                                <input type="radio" id="male" name="gender" value="male" checked></label>
-                        </li>
-                        <li>
-                            <label for="female">Female
-                                <input type="radio" id="female" name="gender" value="female"></label>
-                        </li>
-                    </ul>
+                    <div class="form-row">
+                        <ul class="radio-list">
+                            <li>
+                                <label for="male">Male
+                                    <input type="radio" id="male" name="gender" value="male" checked></label>
+                            </li>
+                            <li>
+                                <label for="female">Female
+                                    <input type="radio" id="female" name="gender" value="female"></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-cols">
+                        <div class="form-row">
+                            <label for="country">Country</label>
+                            <div class="select-wrapper">
+                                <select name="country" id="country" required>
+                                    <option value="select">Select</option>
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="uk">United Kingdom</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+                    <div class="form-btn">
+                        <button id="btn" type="submit" name="signup"> Sign Up</button>
+                    </div>
+                    <div class="terms">
+                        <p>By clicking the 'Sign Up' button, you confirm that you accept our <br> <a href="#">Terms and
+                                Conditions</a> and
+                            <a href="#">Privacy
+                                Policy</a>
+                        </p>
+                    </div>
+                    <div class="line">
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <p>Have an account?</p>
+                <button type="button">Log In</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="form-wrapper">
+            <h1>
+                Profile
+            </h1>
+            <form action="">
+                <div class="img-wrapper">
+                    <div class="avatar-placeholder"></div>
+                    <div class="img-section"> <label for="avatar"></label>
+                        <input type="file" id="avatar">
+                        <p class="file-limit"> Up to 1 MB (300x300 px)</p>
+                        <div class="fake-file"></div>
+                    </div>
+                    <div class="trash-bin">
+                        <button type="button">
+                            <img src="./assets/images/trash.svg" alt="bin">
+                        </button>
+                    </div>
+
                 </div>
                 <div class="form-cols">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name"><br>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
                     <div class="form-row">
                         <label for="country">Country</label>
                         <div class="select-wrapper">
@@ -59,85 +127,20 @@
                         <label for="city">City</label>
                         <input type="text" id="city" name="city">
                     </div>
-                </div>
-                <div class="form-btn">
-                    <button type="button" name="Sign Up"> Sign Up</button>
-                </div>
-                <div class="terms">
-                    <p>By clicking the 'Sign Up' button, you confirm that you accept our <br> <a href="#">Terms and
-                            Conditions</a> and
-                        <a href="#">Privacy
-                            Policy</a>
-                    </p>
-                </div>
-                <div class="line">
-                </div>
-            </div>
-            <div class="footer">
-                <p>Have an account?</p>
-                <button type="button">Log In</button>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="form-wrapper">
-            <h1>
-                Profile
-            </h1>
-            <div class="img-wrapper">
-                <div class="avatar-placeholder"></div>
-                <div class="img-section"> <label for="avatar"></label>
-                    <input type="file" id="avatar">
-                    <p class="file-limit"> Up to 1 MB (300x300 px)</p>
-                    <div class="fake-file"></div>
-                </div>
-                <div class="trash-bin">
-                    <button type="reset">
-                        <img src="./assets/images/trash.svg" alt="bin">
-                    </button>
-                </div>
-
-            </div>
-            <div class="form-cols">
-                <div class="form-row">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name"><br>
-                </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-
-                <div class="form-row">
-                    <label for="country">Country</label>
-                    <div class="select-wrapper">
-                        <select name="country" id="country">
-                            <option value="select">Select</option>
-                            <option value="ukraine">Ukraine</option>
-                            <option value="australia">Australia</option>
-                            <option value="uk">United Kingdom</option>
-                        </select>
+                    <div class="form-row">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" name="zip" id="zip">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="pnumber" id="pnumber">
                     </div>
                 </div>
-                <div class="form-row">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city">
+                <div class="form-btn small">
+                    <button type="button" name="Update">Update</button>
                 </div>
-                <div class="form-row">
-                    <label for="zip">Zip Code</label>
-                    <input type="text" name="zip" id="zip">
-                </div>
-                <div class="form-row">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="pnumber" id="pnumber">
-                </div>
-            </div>
-            <div class="form-btn small">
-                <button type="button" name="Update">Update</button>
-            </div>
-
         </div>
+        </form>
         </div>
 
     </main>
