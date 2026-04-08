@@ -48,7 +48,7 @@ header {
 }
 
 .container {
-    width: 1170px;
+    width: min(90%, 1170px);
     padding: 22.5px 0;
     background-color: #FFF;
     margin: 0 auto;
@@ -195,7 +195,7 @@ footer {
 }
 
 .container-bottom {
-    width: 1170px;
+    width: min(90%, 1170px);
     height: 193px;
     background-color: #16133D;
     margin: 0 auto;
@@ -251,4 +251,39 @@ footer {
             background-position: -192px 0;
         }
     }
+}
+
+@media screen and (max-width: 460px) and (min-width: 340px) {
+
+    body {
+        padding: 0 20px;
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-name {
+        display: none;
+    }
+
+
+    hgroup p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    hgroup h2 {
+        font-size: 16px;
+    }
+
+    .list {
+        width: min(90%, 250px);
+    }
+
+    a {
+        align-items: center;
+    }
+
 }
