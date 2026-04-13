@@ -28,6 +28,12 @@ p {
   color: #565656;
 }
 
+a {
+  font-family: "Lato";
+  text-decoration: none;
+  color: #7B7B7B;
+}
+
 ul,
 ol {
   list-style: none;
