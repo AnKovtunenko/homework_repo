@@ -145,8 +145,16 @@ header {
   display: none;
 }
 
+.mobile-panel {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .hamburger-wrap {
+    display: inline-block;
+  }
+
+  .mobile-panel {
     display: inline-block;
   }
 
@@ -186,17 +194,20 @@ header {
     left: 0;
     top: 0;
     z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
   }
   .mobile-panel.open {
     transform: translateX(0);
   }
-  .mobile-panel nav {
+
+  nav {
     padding: 30px 0;
   }
-  .mobile-panel nav ul li {
+  nav ul li {
     border-bottom: 1px solid #eee;
   }
-  .mobile-panel nav a {
+  nav a {
     display: inline-block;
     width: 100%;
     text-transform: uppercase;
@@ -206,7 +217,7 @@ header {
     text-decoration: none;
     background-color: transparent;
   }
-  .mobile-panel nav a:hover {
+  nav a:hover {
     color: white;
     background-color: rgba(111, 233, 208, 0.54);
     transition: all 0.2s ease;

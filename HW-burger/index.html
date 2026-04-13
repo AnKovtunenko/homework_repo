@@ -95,13 +95,19 @@
                     </div>
                 </div>
                 <script>
-                    document.getElementById('hamb-btn').onclick = function () {
-                        this.classList.add('is-active')
-                        document.body.classList.add('mob-show')
+                    const btn = document.getElementById('hamb-btn');
+                    const overlay = document.querySelector('.overlay');
+                    const panel = document.querySelector('.mobile-panel');
+
+                    btn.onclick = function () {
+                        this.classList.toggle('is-active');
+                        panel.classList.toggle('open');
+                        overlay.classList.toggle('show');
                     }
-                    document.querySelector('.overlay').onclick = function () {
-                        this.classList.remove('is-active')
-                        document.body.classList.remove('mob-show')
+                    overlay.onclick = function () {
+                        btn.classList.remove('is-active');
+                        panel.classList.remove('open');
+                        this.classList.remove('show');
                     }
                 </script>
 </body>
