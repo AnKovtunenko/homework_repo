@@ -46,10 +46,6 @@ ol {
 }
 
 
-a {
-    text-decoration: none;
-}
-
 a,
 button {
     transition: all .2s ease;
@@ -145,6 +141,11 @@ header {
 }
 
 .container {
+    a {
+        font-family: $font-lato;
+        text-decoration: none;
+        color: $light-grey
+    }
 
     h2 {
         @include fz(28);
@@ -218,10 +219,6 @@ header {
         margin-bottom: 20px;
     }
 
-    a {
-        color: $grey;
-        font-family: $font-redhat;
-    }
 
     grid-card {
         img {
