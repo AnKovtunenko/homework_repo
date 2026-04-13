@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/hamburgers.css">
+    <link rel="stylesheet" href="./assets/styles/styles.min.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="mobile-panel">
+        <nav class='mobile-menu'>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <div class="head">
+                    <div class="logo"> <a href=""><img src="./assets/images/Logo.png" alt=""></a></div>
+                    <nav class='web-menu'>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Works</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-btn"> <a href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.1017 11.0715L16.8788 14.6313C17.0475 14.8079 17.0391 15.0783 16.8599 15.2454L16.1989 15.8684C16.1102 15.9526 15.9896 16 15.8637 16C15.7378 16 15.6171 15.9526 15.5285 15.8684L11.7514 12.3085C11.6469 12.21 11.5521 12.1028 11.4681 11.9881L10.7599 11.0982C9.58814 11.9801 8.13301 12.4602 6.63347 12.4598C3.54346 12.4699 0.858359 10.461 0.167823 7.62231C-0.522714 4.78365 0.965611 1.87288 3.75166 0.613257C6.53772 -0.646363 9.87794 0.0813446 11.7948 2.36555C13.7117 4.64977 13.6937 7.88086 11.7514 10.1459L12.6957 10.76C12.8431 10.849 12.9794 10.9535 13.1017 11.0715ZM1.9126 6.23017C1.9126 8.68773 4.02641 10.68 6.63393 10.68C7.88611 10.68 9.087 10.2112 9.97242 9.37666C10.8578 8.54216 11.3553 7.41034 11.3553 6.23017C11.3553 3.77262 9.24145 1.78037 6.63393 1.78037C4.02641 1.78037 1.9126 3.77262 1.9126 6.23017Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hamburger-wrap">
+                        <button id="hamb-btn" class="hamburger--minus" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <main>
+                <div class="bg-section">
+                    <h1 class="container">Manifest is a newborn theme.
+                        Clean, simple and fast.</h1>
+                    <div class="bg-img"></div>
+                </div>
+                <div>
+                    <h2>Blog</h2>
+                    <div class="grid-container">
+                        <div class="grid-photo"><img src="./assets/images/image1.png" alt=""></div>
+                        <div class="text-element">
+                            <hgroup>
+                                <p>Technology, Interface Design</p>
+                                <h3>Using UX Design to Build a Sustainable Future</h3>
+                            </hgroup>
+                            <div class="date">6 May, 2020</div>
+                            <p>Transformation has to be driven by everybody, not just by climate groups, and we have a
+                                responsibility to use our influence to drive this.</p>
+                            <div class="arrow"><button type="button"><img src="./assets/images/arrow.svg"
+                                        alt=""></button>
+                            </div>
+                        </div>
+                        <div class="text-element">
+                            <hgroup>
+                                <p>Technology, Interface Design</p>
+                                <h3>Using UX Design to Build a Sustainable Future</h3>
+                            </hgroup>
+                            <div class="date">6 May, 2020</div>
+                            <p>Transformation has to be driven by everybody, not just by climate groups, and we have a
+                                responsibility to use our influence to drive this.
+                            <div class="arrow">
+                            </div>
+                            </p>
+                        </div>
+                        <div class="grid-photo"><img src="./assets/images/image2.png" alt=""></div>
+
+
+                    </div>
+                </div>
+                <script>
+                    document.getElementById('hamb-btn').onclick = function () {
+                        this.classList.add('is-active')
+                        document.body.classList.add('mob-show')
+                    }
+                    document.querySelector('.overlay').onclick = function () {
+                        this.classList.remove('is-active')
+                        document.body.classList.remove('mob-show')
+                    }
+                </script>
+</body>
+
+</html>
