@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./../fonts/lato-regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RedHat';
+    src: url('./../fonts/RedHatDisplay-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$black: #222;
+$grey: #565656;
+$light-grey:#7B7B7B;
+$font-lato: "Lato";
+$font-redhat: "RedHat";
+
+@mixin fz($px) {
+    font-size: ($px/16)*1rem;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h {
+    font-family: $font-redhat;
+}
+
+p {
+    color: $grey;
+}
+
+a {
+    font-family: "Lato";
+    text-decoration: none;
+    color: #7B7B7B;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+a,
+button {
+    transition: all .2s ease;
+    background: none;
+    border: none;
+}
+
+body {
+    @include fz(16);
+    color: $black;
+    font-family: $font-lato;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    main {
+        flex-grow: 1;
+    }
+
+}
+
+.container {
+    width: min(90%, 1170px);
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+    gap: 5px;
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 42px;
+        font-size: 1.197vw;
+        text-transform: uppercase;
+
+        a {
+            text-decoration: none;
+            color: $grey;
+
+            &:hover {
+                color: white;
+                background-color: rgba(10, 87, 72, 0.54);
+                transition: all .2s ease;
+            }
+
+            &:focus {
+                background-color: rgba(252, 87, 66, 0.54);
+                transition: all .2s ease;
+                border-color: #565656;
+            }
+
+        }
+    }
+
+}
+
+
+
+.bg-section {
+    background-image: url("./../images/bg-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 12 / 5;
+
+    h1 {
+        @include fz(48);
+        margin-top: 100px;
+        min-width: 120px;
+        padding-top: 100px;
+    }
+
+    margin-bottom: 0;
+
+}
+
+.container {
+    a {
+        font-family: $font-lato;
+        text-decoration: none;
+        color: $light-grey
+    }
+
+    h2 {
+        @include fz(28);
+        font-family: $font-redhat;
+        color: $black;
+        margin-bottom: 50px;
+        margin-top: 90px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.text-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .grid-photo {
+        img {
+            aspect-ratio: 1;
+        }
+
+        p,
+        .date {
+            letter-spacing: 10%;
+        }
+
+        h3 {
+            font-family: $font-redhat;
+            @include fz(23);
+            color: $black;
+            letter-spacing: 10%;
+        }
+    }
+}
+
+.hamburger-wrap {
+    display: none;
+}
+
+.mobile-panel {
+    display: none;
+}
+
+.grid-container-3 {
+    .name-date {
+        display: flex;
+        justify-content: space-between;
+        @include fz(12);
+
+
+        ;
+    }
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+
+    h5 {
+        color: $light-grey;
+        margin-bottom: 25.5px;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+
+    grid-card {
+        img {
+            aspect-ratio: 370/260;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        padding: 0 15px 15px 15px;
+    }
+
+    .grid-container-3,
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+///
+@media screen and (max-width:1024px) {
+    .hamburger-wrap {
+        display: inline-block;
+    }
+
+    .mobile-panel {
+        display: inline-block;
+    }
+
+    .web-menu {
+        display: none;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($color: #000, $alpha: 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        transition: all .2s ease;
+        visibility: hidden;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .hamburger--minus {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mobile-panel {
+        position: fixed;
+        width: 300px;
+        height: 100dvh;
+        background-color: #fff;
+        left: 0;
+        top: 0;
+        z-index: 100;
+
+        transform: translateX(-100%);
+
+        transition: transform .3s ease;
+
+        &.open {
+            transform: translateX(0);
+        }
+    }
+
+    nav {
+        padding: 30px 0;
+
+        ul li {
+
+            border-bottom: 1px solid #eee;
+        }
+
+        a {
+            display: inline-block;
+            width: 100%;
+            text-transform: uppercase;
+            @include fz(23);
+            color: $grey;
+            padding: 20px;
+            text-decoration: none;
+            background-color: transparent;
+
+            &:hover {
+                color: white;
+                background-color: rgba(111, 233, 208, 0.54);
+                transition: all .2s ease;
+            }
+        }
+    }
+}
+
+.picture-wrap {
+    aspect-ratio: 1170/500;
+
+    @media screen and (max-width:1024px) {
+        aspect-ratio: 340/240;
+    }
+
+    @media screen and (max-width:500px) {
+        aspect-ratio: 300/250;
+    }
+}
