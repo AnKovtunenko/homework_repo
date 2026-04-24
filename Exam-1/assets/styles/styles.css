@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "Aleo";
+  src: url("./../fonts/Aleo-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin";
+  src: url("./../fonts/Josefin-Sans-regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin-light";
+  src: url("./../fonts/Josefin-Sans-regular.woff2") format("woff");
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Josefin-bold";
+  src: url("./../fonts/Josefin-Sans-Bold.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h {
+  font-family: "Josefin";
+}
+
+p {
+  color: #FFFFFF;
+}
+
+a {
+  font-family: "Lato";
+  text-decoration: none;
+  color: #7B7B7B;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+button {
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+}
+a:focus,
+button:focus {
+  text-decoration: underline solid black;
+  border: 1px solid #000000;
+}
+
+body {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.page-wrapper main {
+  flex-grow: 1;
+}
+
+.container {
+  width: min(90%, 1320px);
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #5373FD;
+  z-index: 1000;
+}
+.header .container {
+  min-height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header p {
+  font-size: 1.5rem;
+  font-family: "Josefin";
+  text-transform: uppercase;
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.header ul li {
+  text-transform: uppercase;
+}
+.header ul li a {
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Aleo";
+  letter-spacing: 10%;
+}
+
+.section-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.section-wrap p {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-family: "Josefin";
+}
+
+.first-screen {
+  height: 100dvh;
+  background: url(./../images/HeaderBackground.png) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-wrap {
+  background-color: #FFFFFF;
+  width: 647px;
+  height: 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-wrap .input-wrap {
+  flex-grow: 1;
+  padding-left: 36px;
+  height: 100%;
+}
+.search-wrap input {
+  width: 100%;
+  border: none;
+  font-family: "Josefin";
+  color: #999999;
+  font-size: 0.875rem;
+  letter-spacing: 20%;
+  height: 100%;
+}
+.search-wrap button {
+  background-color: #5373FD;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 4px solid white;
+  padding: 0 24px;
+  text-transform: uppercase;
+}
+.search-wrap button svg {
+  margin-right: 12px;
+}
+.search-wrap button:hover {
+  border: 1px solid #000000;
+}
+.search-wrap button:focus {
+  background-color: #00A2FF;
+}
+
+.scroll-btn-wrap {
+  text-align: center;
+  margin-top: clamp(16px, 14vw, 221px);
+}
+
+.scroll-btn {
+  width: 80px;
+  height: 80px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: "Josefin";
+  font-size: 0.875rem;
+  letter-spacing: 20%;
+}
+
+.scroll-btn::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: white;
+  top: 45px;
+  left: 35px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.scroll-btn::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: white;
+  top: 45px;
+  left: 43px;
+  transform: rotate(-45deg);
+  border-radius: 2px;
+}
+
+.content h1 {
+  font-size: 3.25rem;
+  color: #FFFFFF;
+  font-family: "Josefin-bold";
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.content p {
+  font-size: 1.375rem;
+  color: #FFFFFF;
+  font-family: "Josefin";
+  letter-spacing: 31%;
+}
+.content hgroup {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.second-page {
+  height: 100dvh;
+  background: url(./../images/faded-pg.png) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.second-page .section-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #FFFFFF;
+  gap: 135px;
+}
+.second-page .section-wrap .btn {
+  max-width: 213px;
+  position: relative;
+  padding-top: clamp(30px);
+  padding: 18px 40px;
+  font-size: 1rem;
+  color: white;
+  background: #486BFE;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.second-page .section-wrap .btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #5373FD;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+.second-page .section-wrap .btn {
+  z-index: 1;
+}
+.second-page .section-wrap .btn span {
+  position: relative;
+  z-index: 2;
+  font-family: "Aleo";
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+}
+.second-page .section-wrap .btn:hover::before {
+  transform: scaleX(1);
+  rotate: -20deg;
+}
+.second-page .section-wrap h1 {
+  font-size: 2.375rem;
+  font-family: "Aleo";
+  margin-bottom: clamp(20px, 3vw, 24px);
+}
+.second-page .section-wrap p {
+  font-size: 1rem;
+  font-family: "Josefin-light";
+  margin-bottom: clamp(20px, 3vw, 24px);
+  letter-spacing: 10%;
+}
+
+.second-page .text-block {
+  max-width: 648px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ph-section {
+  max-width: 424px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ph-section .img1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.ph-section .img2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.third-page {
+  background-color: #333333;
+}
+
+.icons-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+}
+.icons-wrap .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+  align-items: center;
+  gap: 4px;
+}
+.icons-wrap .icon span {
+  font-family: "Aleo";
+  font-size: 2.25rem;
+  color: #FFFFFF;
+}
+
+.line {
+  flex: 1;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top: 1px dashed #FFFFFF;
+  border-radius: 50%;
+  top: 60px;
+}
