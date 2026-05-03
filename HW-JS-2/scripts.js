@@ -27,16 +27,15 @@ console.log('Money left:', moneyAmount%chocolatePrice);
 
 //norm-2
 
-const number3 = prompt('Enter 3 digits')
-if (number3.length !== 3){
+let number3 = '';
+while (number3.length !== 3){
     alert('Please enter 3 digits')
+    number3 = prompt('Enter 3 digits')
 }
-else {
-    const reversedNumber = number3.split('').reverse().join('');
-    alert(`Reversed number: ${reversedNumber}`);
-}
+ const reversedNumber = number3.split('').reverse().join('');
+ alert(`Reversed number: ${reversedNumber}`);
 
-max-1
+//max-1
 const deposit = prompt('Enter amount of deposit for 2 months')
 const interestRate = 0.05;
 const interest = (deposit * interestRate);

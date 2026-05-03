@@ -21,16 +21,16 @@ var chocolatePrice = prompt('Enter choco price');
 console.log('Amount of chocolates:', Math.floor(moneyAmount / chocolatePrice));
 console.log('Money left:', moneyAmount % chocolatePrice); //norm-2
 
-var number3 = prompt('Enter 3 digits');
+var number3 = '';
 
-if (number3.length !== 3) {
+while (number3.length !== 3) {
   alert('Please enter 3 digits');
-} else {
-  var reversedNumber = number3.split('').reverse().join('');
-  alert("Reversed number: ".concat(reversedNumber));
+  number3 = prompt('Enter 3 digits');
 }
 
-max - 1;
+var reversedNumber = number3.split('').reverse().join('');
+alert("Reversed number: ".concat(reversedNumber)); //max-1
+
 var deposit = prompt('Enter amount of deposit for 2 months');
 var interestRate = 0.05;
 var interest = deposit * interestRate;
