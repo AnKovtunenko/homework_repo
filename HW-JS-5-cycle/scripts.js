@@ -1,7 +1,5 @@
 //min1 
 const year = prompt("Введіть свій вік")
-
-
 if (year >= 0 && year <= 11) {
     alert('Ви дитина');
 }
