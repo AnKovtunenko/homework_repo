@@ -17,7 +17,7 @@ else {
 }
 
 // // Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
-const num = prompt("Введіть число від 0 до 9")
+let num = prompt("Введіть число від 0 до 9")
 
 switch (num) {
     case '0':
@@ -82,7 +82,7 @@ for (let i = maxNum; i > 0; i--) {
 
 // Запитай у користувача число і виведи всі дільники цього числа.
 
-const num = prompt('Input number');
+num = prompt('Input number');
 for (let i = 1; i <= num; i++) {
     if (num % i === 0) {
         console.log('Дільник: ', i);
@@ -92,7 +92,7 @@ for (let i = 1; i <= num; i++) {
 // Норма
 
 // Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
-const num = prompt('Input five-digit number');
+num = prompt('Input five-digit number');
 if (num.length === 5) {
     if (num[0] === num[4] && num[1] === num[3]) {
         console.log('Число є паліндромом');
@@ -232,10 +232,9 @@ for (let i = 2; i <= 9; i++) {
 console.log(multiplicationTable);
 
 // Запитай дату (день, місяць, рік) і виведи наступну за нею дату. Враховуй можливість переходу на наступний місяць, рік, а також високосний рік.
-
 const day = prompt('Введіть день');
 const month = prompt('Введіть місяць');
-const year = prompt('Введіть рік');
+year = prompt('Введіть рік');
 
 const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 const daysInMonth = [31, isLeapYear ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
