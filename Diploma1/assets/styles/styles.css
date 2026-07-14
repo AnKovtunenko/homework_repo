@@ -1136,6 +1136,7 @@ footer .nav-footer p:hover {
   }
 
   footer .nav-footer {
+    margin: 15px 10px;
     grid-template-columns: 1fr;
     text-align: center;
     gap: 20px;
