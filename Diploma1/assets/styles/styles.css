@@ -224,7 +224,7 @@ input[type=checkbox i] {
 
 .wave-section {
   position: relative;
-  background: url("./../images/wave.JPG") center/cover;
+  background: url("./../images/wave.jpg") center/cover;
   height: 400px;
 }
 
