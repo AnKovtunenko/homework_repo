@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../assets/styles/styles.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="head">
+            <div class="banner">
+                <p class='marquee-text'>Дякуємо за інтерес до наших виробів та за донати на Сили Оборони України.
+                    🇺🇦🇺🇦🇺🇦
+                </p>
+            </div>
+            <div class="head-wrap">
+                <div class="logo"><a href="./../index.html">TE C'EST</a></div>
+                <div class="nav-panel">
+                    <ul>
+                        <li><a href="./shop.html">Магазин</a></li>
+                        <li><a href="./about.html">Про нас</a></li>
+                        <li><a href="./order.html">Як замовити</a></li>
+                        <li><a href="./contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section id="catalog" class="container">
+                <h1 class="shop-title">Магазин</h1>
+                <div id="catalog-grid"></div>
+            </section>
+
+        </main>
+
+        <div class="modal hidden" id="detailsModal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-grid">
+                    <div class="left-side">
+                        <img id="modalImage" alt="modalImage">
+                    </div>
+                    <div class="right-side">
+                        <h2 id="modalName"></h2>
+                        <div class="divider"></div>
+                        <div class="price-line">
+                            Ціна:
+                            <span id="modalPrice"></span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="status-line">
+                            Статус:
+                            <span id="modalStatus"></span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="description" id="modalDescription"></div>
+                        <div class="divider"></div>
+                        <div class="lengths">
+                            <h3>Виберіть довжину</h3>
+                            <label>
+                                <input type="radio" name="length" value="35">
+                                35 cm
+                            </label>
+                            <label>
+                                <input type="radio" name="length" value="40">
+                                40 cm (+30 грн)
+                            </label>
+                            <label>
+                                <input type="radio" name="length" value="45">
+                                45 cm (+60 грн)
+                            </label>
+                        </div>
+                        <button id="orderBtn">
+                            Замовити
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal hidden" id="orderModal">
+            <div class="order-content">
+                <button class="close-order">&times;</button>
+                <div class="order-grid">
+                    <div class="order-left"><img id="orderImage">
+                        <h2 id="orderName"></h2>
+                        <div class="line"></div>
+                        <p id="orderPrice"></p>
+                        <div class="line"></div>
+                        <p id="orderLength"></p>
+                    </div>
+                    <div class="order-right">
+                        <form id="orderForm">
+                            <div class="field"><label for="customerName">Ім'я</label><input required id="customerName"
+                                    type="text"></div>
+                            <div class="line"></div>
+                            <div class="field"><label>Телефон</label><input required id="customerPhone" type="tel">
+                            </div>
+                            <div class="line"></div>
+                            <div class="field"><label>Telegram</label><input required id="customerTelegram" type="text"
+                                    placeholder="@username"></div>
+                            <div class="line"></div>
+                            <div class="field"><label>Коментар</label><textarea id="customerComment"
+                                    rows="5"></textarea>
+                            </div>
+                            <div class="line"></div>
+                            <button id="sendOrder" type="submit">
+                                Замовити
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./../js/data.js"></script>
+        <script src="./../js/telegram.js"></script>
+        <script src="./../js/shop.js"></script>
+        <footer>
+            <div class="nav-footer container">
+                <div>
+                    <p><a href="./../pages/shop.html"> Купити виріб</a></p>
+                    <ul>
+                        <li><a href="./../pages/shop.html">Дофамінові намиста</a></li>
+                        <li> <a href="./../pages/shop.html">Класика</a></li>
+                        <li><a href="./../pages/shop.html">Каблучки</a></li>
+                        <li><a href="./../pages/shop.html">Браслети</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Донатити</p>
+                    <ul>
+                        <li><a href="https://send.monobank.ua/jar/48AJdAj8A" target="_blank">Куди донатити</a></li>
+                        <li><a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDAyMTg5OTMwNDYxMTQy?story_media_id=3226621487904741773&igsh=aWJ4b3kxNjFiNm9j"
+                                target="_blank">Звіти</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/te.cest?igsh=bDFrdWl5dDdsamN2"
+                                target="_blank">Співпраця</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p> Звʼяжіться з нами</p>
+                    <ul>
+                        <li><a href="mailto:anbanan008@gmail.com">anbanan008@gmail.com</a></li>
+                        <li> <a href="https://www.instagram.com/te.cest?igsh=bDFrdWl5dDdsamN2"
+                                target="_blank">@te.cest</a>
+                        </li>
+                </div>
+                <div class="logo-footer"> <a href="./../index.html">TE C'EST</a></div>
+            </div>
+        </footer>
+</body>
+</div>
+
+</html>
