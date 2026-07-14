@@ -168,6 +168,12 @@ input[type=checkbox i] {
   font-size: 3.4375rem;
 }
 
+.details {
+  text-align: center;
+  font-family: "Gothic-regular", sans-serif;
+  font-size: 1.5rem;
+}
+
 .main-banner .about {
   margin-top: 30px;
   font-family: "Gothic-regular";
@@ -829,13 +835,22 @@ footer .nav-footer p:hover {
   }
 
   #catalog-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+    justify-items: center;
   }
 
   .modal-content {
     width: min(92vw, 900px);
     padding: 24px;
+  }
+
+  .contacts-page {
+    padding: 40px 20px;
+  }
+
+  .contacts-grid {
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1028px) {
@@ -1136,7 +1151,6 @@ footer .nav-footer p:hover {
   }
 
   footer .nav-footer {
-    margin-top: 15px;
     margin-bottom: 15px;
     grid-template-columns: 1fr;
     text-align: center;
@@ -1152,12 +1166,18 @@ footer .nav-footer p:hover {
   }
 
   .details {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 
   .order-content {
     width: 95vw;
     padding: 24px;
+  }
+
+  footer .nav-footer p {
+    margin-top: 20px;
   }
 }
 /* ---------------- Instruction ---------------- */
