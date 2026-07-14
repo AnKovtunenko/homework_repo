@@ -1141,6 +1141,10 @@ footer .nav-footer p:hover {
     gap: 20px;
   }
 
+  .buy-footer {
+    display: none;
+  }
+
   .wave-section {
     max-height: 200px;
   }
@@ -1152,10 +1156,6 @@ footer .nav-footer p:hover {
   .order-content {
     width: 95vw;
     padding: 24px;
-  }
-
-  .logo-footer {
-    display: none;
   }
 }
 /* ---------------- Instruction ---------------- */
