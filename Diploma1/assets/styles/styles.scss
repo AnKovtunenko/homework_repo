@@ -808,7 +808,7 @@ footer .nav-footer p:hover {
 }
 
 
-@media (min-width: 1028px) and (max-width: 1555px) {
+@media (min-width: 1028px) and (max-width: 1370px) {
     .container {
         max-width: 92%;
     }
@@ -840,9 +840,7 @@ footer .nav-footer p:hover {
         justify-content: center;
     }
 
-    .main-banner {
-        grid-template-columns: 1fr;
-    }
+
 
     .main-banner img {
         width: 100%;
@@ -879,7 +877,6 @@ footer .nav-footer p:hover {
 
     .head .head-wrap .nav-panel ul {
         gap: 16px;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -890,7 +887,7 @@ footer .nav-footer p:hover {
     .main-banner .about,
     .main-banner .order,
     .main-banner .info-block {
-        font-size: 1rem;
+        font-size: 0.5rem;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -964,12 +961,13 @@ footer .nav-footer p:hover {
     }
 
     .main-banner .hello {
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
 
     .main-banner .about,
     .main-banner .order {
         margin-top: 16px;
+        font-size: 0.75rem;
     }
 
     .carouselle-wrap h2 {
@@ -990,7 +988,10 @@ footer .nav-footer p:hover {
     #catalog-grid {
         grid-template-columns: 1fr;
         justify-items: center;
-        gap: 2%;
+    }
+
+    .carouselle-wrap {
+        display: none
     }
 
     .image-wrapper,
@@ -1015,6 +1016,11 @@ footer .nav-footer p:hover {
         top: 12px;
         right: 12px;
         font-size: 1.5rem;
+    }
+
+    .order-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     #orderBtn,
