@@ -131,7 +131,7 @@ function createCatalog() {
                 <button
                     class="details-btn"
                     data-id="${necklace.id}">
-                Details
+                Замовити
                 </button>
            </div>
            <div>

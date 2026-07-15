@@ -122,7 +122,7 @@ var grid = document.getElementById("catalog-grid");
 function createCatalog() {
   grid.innerHTML = "";
   necklaces.forEach(function (necklace) {
-    grid.innerHTML += "<div class=\"card\">\n            <div class=\"image-wrapper\">\n                <img src=\"".concat('../' + necklace.photo, "\" alt=\"").concat(necklace.name, "\">\n                <button\n                    class=\"details-btn\"\n                    data-id=\"").concat(necklace.id, "\">\n                Details\n                </button>\n           </div>\n           <div>\n            <h2>").concat(necklace.name, "</h2>\n            </div>\n");
+    grid.innerHTML += "<div class=\"card\">\n            <div class=\"image-wrapper\">\n                <img src=\"".concat('../' + necklace.photo, "\" alt=\"").concat(necklace.name, "\">\n                <button\n                    class=\"details-btn\"\n                    data-id=\"").concat(necklace.id, "\">\n                \u0417\u0430\u043C\u043E\u0432\u0438\u0442\u0438\n                </button>\n           </div>\n           <div>\n            <h2>").concat(necklace.name, "</h2>\n            </div>\n");
   });
 }
 

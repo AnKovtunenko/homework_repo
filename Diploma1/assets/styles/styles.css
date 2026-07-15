@@ -524,6 +524,7 @@ footer .nav-footer p:hover {
   opacity: 0;
   transition: 0.3s;
   color: #666;
+  font-family: "Gothic-regular", sans-serif;
 }
 
 .image-wrapper:hover .details-btn {
