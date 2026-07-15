@@ -82,8 +82,8 @@ orderBtn.addEventListener("click", function () {
 
   orderImage.src = '../' + currentNecklace.photo;
   orderName.textContent = currentNecklace.name;
-  orderPrice.textContent = "Price: ".concat(finalPrice, " \u0433\u0440\u043D");
-  orderLength.textContent = "Length: ".concat(selectedLength, " cm");
+  orderPrice.textContent = "\u0426\u0456\u043D\u0430: ".concat(finalPrice, " \u0433\u0440\u043D");
+  orderLength.textContent = "\u0414\u043E\u0432\u0436\u0438\u043D\u0430: ".concat(selectedLength, " cm");
   modal.classList.add("hidden");
   orderModal.classList.remove("hidden");
 });
@@ -110,10 +110,10 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     date: new Date().toLocaleString()
   };
   sendTelegramOrder(order).then(function () {
-    alert("Order successfully sent!");
+    toastr.success("Замовлення сформоване, ми з вами звʼяжемося!");
   })["catch"](function (e) {
     console.error('error :: ', e);
-    alert("Could not send the order to Telegram. Please try again or contact us directly.");
+    toastr.error("Помилка при створенні замовдення, будь ласка напишіть нам в інстаграм @te.cest.");
   });
   orderModal.classList.add("hidden");
 });

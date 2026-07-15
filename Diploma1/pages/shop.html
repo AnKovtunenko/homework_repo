@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Te.cest</title>
+    <meta name="description" content="Каталог виробів, замовлення">
+    <link rel="icon" href="./../assets/images/favicon (1)/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./../assets/styles/styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <style>
         body {
             background-color: #ffffff;
@@ -107,17 +111,19 @@
                     </div>
                     <div class="order-right">
                         <form id="orderForm">
-                            <div class="field"><label for="customerName">Ім'я</label><input required id="customerName"
-                                    type="text"></div>
+                            <div class="field"><label for="customerName">Ім'я</label><input placeholder="Імʼя Прізвище"
+                                    required id="customerName" type="text"></div>
                             <div class="line"></div>
-                            <div class="field"><label>Телефон</label><input required id="customerPhone" type="tel">
+                            <div class="field"><label for="customerTelephone">Телефон</label><input
+                                    placeholder="093 000 00 00" required id="customerPhone" type="tel">
                             </div>
                             <div class="line"></div>
-                            <div class="field"><label>Telegram</label><input required id="customerTelegram" type="text"
+                            <div class="field"><label for="customerTelegram">Telegram</label><input
+                                    placeholder=@telegram" required id="customerTelegram" type="text"
                                     placeholder="@username"></div>
                             <div class="line"></div>
-                            <div class="field"><label>Коментар</label><textarea id="customerComment"
-                                    rows="5"></textarea>
+                            <div class="field"><label for="customerComment">Коментар</label><textarea
+                                    placeholder="Адреса Доставки" id="customerComment" rows="5"></textarea>
                             </div>
                             <div class="line"></div>
                             <button id="sendOrder" type="submit">
@@ -129,9 +135,7 @@
             </div>
         </div>
 
-        <script src="./../js/data.js"></script>
-        <script src="./../js/telegram.js"></script>
-        <script src="./../js/shop.js"></script>
+
         <footer>
             <div class="nav-footer container">
                 <div class="buy-footer">
@@ -166,6 +170,14 @@
                 <div class="logo-footer"> <a href="./../index.html">TE C'EST</a></div>
             </div>
         </footer>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <script src="./../js/data.js"></script>
+        <script src="./../js/telegram.js"></script>
+        <script src="./../js/shop.js"></script>
+
 </body>
 </div>
 

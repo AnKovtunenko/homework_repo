@@ -2,14 +2,14 @@ async function sendTelegramOrder(order) {
   const TOKEN = "8955218737:AAGBgWcUHAaepqGmCaHsnRJL4g1gBNi1zVk";
   const CHAT_ID = "-1003977383236";
   const text = `
-📿 New order
-👤 Name: ${order.name}
-📞 Phone: ${order.phone}
+📿 Нове замовлення
+👤 Імʼя: ${order.name}
+📞 Телефон: ${order.phone}
 💬 Telegram: ${order.telegram}
-📿 Necklace: ${order.necklace}
-📏 Length: ${order.length} cm
-💰 Price: ${order.price} грн
-📝 Comment:
+📿 Намисто: ${order.necklace}
+📏 Довжина: ${order.length} cm
+💰 Ціна: ${order.price} грн
+📝 Коментар:
 ${order.comment}
 🕒 ${order.date}
 `;

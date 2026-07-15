@@ -58,6 +58,10 @@ button {
     transition: all 0.2s ease;
     background: none;
     border: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 a:focus,
@@ -65,6 +69,7 @@ button:focus {
     text-decoration: solid black;
     border: 1px solid #2A2A2A;
     font-family: "Gothic-regular";
+    cursor: pointer;
 }
 
 body {
@@ -88,6 +93,9 @@ body {
     margin: 0 auto;
 }
 
+::placeholder {
+    font-family: $gothic;
+}
 
 .shop-title {
     font-family: $gothic;
@@ -161,6 +169,10 @@ body {
     color: #750B10;
     font-weight: 800;
     font-size: 4.125rem;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 input[type="checkbox"i] {
@@ -301,6 +313,7 @@ footer .nav-footer p:hover {
     text-align: center;
     padding: 50px 20px;
     line-height: 1.6;
+
 }
 
 .about-hero h1 {
@@ -313,6 +326,7 @@ footer .nav-footer p:hover {
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+    text-transform: math-auto;
 }
 
 /* Main Content Container */
@@ -401,9 +415,9 @@ footer .nav-footer p:hover {
 }
 
 .contacts-page {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 140px 20px;
+    margin-top: 50px;
 }
 
 /* ---------------- HERO ---------------- */
@@ -428,8 +442,8 @@ footer .nav-footer p:hover {
 .contacts-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 80px 120px;
-    margin-bottom: 140px;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-block {
@@ -473,27 +487,6 @@ footer .nav-footer p:hover {
     gap: 12px;
 }
 
-/* ---------------- MOBILE ---------------- */
-@media (max-width: 768px) {
-    .contacts-page {
-        padding: 100px 20px;
-    }
-
-    .contacts-grid {
-        grid-template-columns: 1fr;
-        gap: 60px;
-        margin-bottom: 100px;
-    }
-
-    .contacts-hero {
-        margin-bottom: 80px;
-    }
-
-    .contacts-hero h1 {
-        font-size: 2.5rem;
-    }
-}
-
 .catalog {
     max-width: min(90%, 1320px);
     margin: 80px auto;
@@ -510,6 +503,7 @@ footer .nav-footer p:hover {
     gap: 35px;
     justify-content: center;
     padding-bottom: 60px;
+    justify-items: center;
 }
 
 
@@ -657,8 +651,13 @@ footer .nav-footer p:hover {
     font-size: 1.375rem;
 }
 
+.right-side {
+    font-family: $gothic;
+}
+
 .description {
     line-height: 1.6;
+    font-family: $gothic;
 }
 
 .lengths {
@@ -769,6 +768,7 @@ footer .nav-footer p:hover {
     flex-direction: column;
     gap: 20px;
     min-width: 0;
+    font-family: $gothic;
 }
 
 #orderForm {
@@ -885,6 +885,8 @@ footer .nav-footer p:hover {
     .catalog {
         width: min(92%, 1320px);
     }
+
+
 
     .banner {
         height: auto;
@@ -1074,6 +1076,7 @@ footer .nav-footer p:hover {
         font-size: 2rem;
         margin-top: 40px;
         margin-bottom: 24px;
+
     }
 
     #catalog-grid {
@@ -1174,7 +1177,14 @@ footer .nav-footer p:hover {
     }
 
     .contacts-page {
-        padding: 80px 14px;
+        gap: 0px;
+    }
+
+    .shop-title {
+        margin-top: 40px;
+        margin-bottom: 24px;
+        font-size: 1.5rem;
+
     }
 
     .modal-grid,
@@ -1185,7 +1195,7 @@ footer .nav-footer p:hover {
 
     footer .nav-footer {
         // margin-top: 15px;
-        margin-bottom: 15px;
+        padding-bottom: 15px;
         grid-template-columns: 1fr;
         text-align: center;
         gap: 20px;
@@ -1203,6 +1213,7 @@ footer .nav-footer p:hover {
         margin-top: 30px;
         margin-bottom: 30px;
         text-align: center;
+        font-size: 1.3rem;
     }
 
     .order-content {
